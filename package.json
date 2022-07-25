@@ -2,10 +2,17 @@
   "name": "@gsg/service-two",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"NODE_ENV=development node src/index.js",
+    "prod":"NODE_ENV=production LOG_LEVEL=1 node src/index.js"
   },
   "author": "Sathish Gajarla <sathish.gajarla@washmen.com>",
-  "license": "ISC"
+  "license": "ISC",
+   "dependencies": {
+    "@gsg/shared-libs":"1.0.0"
+  },
+  "type": "commonjs"
+
 }
